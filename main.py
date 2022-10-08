@@ -13,9 +13,9 @@ lista_meses = ['janeiro', 'fevereiro', 'março', 'maio', 'junho']
 for mes in lista_meses:
     tabela_vendas = pd.read_excel(f'{mes}.xlsx')
 
-    if(tabela_vendas['Vendas'] > 40000).any():
-        vendedor = tabela_vendas.loc[tabela_vendas['Vendas'] > 40000, 'Vendedor'].values[0]
-        vendas = tabela_vendas.loc[tabela_vendas['Vendas'] > 40000, 'Vendas'].values[0]
+    if(tabela_vendas['Vendas'] > 45000).any():
+        vendedor = tabela_vendas.loc[tabela_vendas['Vendas'] > 45000, 'Vendedor'].values[0]
+        vendas = tabela_vendas.loc[tabela_vendas['Vendas'] > 45000, 'Vendas'].values[0]
         print(f'No mês {mes} alguém bateu a meta. Vendedor: {vendedor}  e Vendas: {vendas}')
 
 
